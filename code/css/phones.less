@@ -1,0 +1,78 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+.phone_list {
+    margin-right: 40%;
+
+    & .list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        & li {
+            display: flex;
+            flex-direction: column;
+            width: 18%;
+            margin: 5px;
+            padding: 0 10px 10px;
+            border: 1px solid black;
+            text-align: center;
+
+            & img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.phone_details {
+    position: fixed;
+    top: -15px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+
+    & img {
+        width: 450px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.arrows {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50px;
+    display: none;
+
+    & div {
+        position: absolute;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background-color: navy;
+    }
+
+    & .arrow-right {
+        right: 0;
+    }
+}
